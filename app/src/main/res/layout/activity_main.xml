@@ -7,24 +7,19 @@
     android:orientation="vertical"
     tools:context="com.example.digdig.swipeviewna6.MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_weight="1"
-        android:layout_height="0dp"
-        android:orientation="horizontal"></LinearLayout>
+<include
+    layout="@layout/toobar"
+    android:id="@+id/toolBar"
+    ></include>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal">
+<android.support.design.widget.TabLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tabLayout"
+    android:background="#68ec68"></android.support.design.widget.TabLayout>
+
         <android.support.v4.view.ViewPager
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/ViewPage"></android.support.v4.view.ViewPager>
-    </LinearLayout>
-
-
-
-
-</LinearLayout>
+  </LinearLayout>
